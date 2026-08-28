@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 03 - Example 01: Basic & External Links</title>
+</head>
+<body>
+
+    <h1>Basic Hyperlinks &amp; External Navigation</h1>
+    <p>This example demonstrates how to connect web pages using absolute URLs, window targets, and security attributes.</p>
+
+    <hr>
+
+    <h2>1. Default Link Behavior (target="_self")</h2>
+    <p>
+        Clicking this link opens Google in the <strong>same browser tab</strong>:
+        <br>
+        <!-- target="_self" is the default behavior if target is omitted -->
+        <a href="https://www.google.com" target="_self" title="Go to Google Search Engine">Visit Google (Same Tab)</a>
+    </p>
+
+    <h2>2. Open in New Tab with Security Best Practice (target="_blank")</h2>
+    <p>
+        Clicking this link opens GitHub in a <strong>new browser tab</strong> safely:
+        <br>
+        <!-- ALWAYS include rel="noopener noreferrer" with target="_blank" to prevent tabnabbing security attacks -->
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="Opens GitHub in a new secure tab">
+            Visit Official GitHub (New Secure Tab 🚀)
+        </a>
+    </p>
+
+    <h2>3. Accessible Link Text vs Bad Practice</h2>
+    <p>
+        <!-- ❌ BAD ACCESSIBILITY: <a href="https://developer.mozilla.org">Click Here</a> -->
+        <!-- ✅ GOOD ACCESSIBILITY: Descriptive anchor text -->
+        Read the official documentation at the
+        <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" title="MDN Web Docs Documentation">
+            MDN Web Docs Developer Portal
+        </a>.
+    </p>
+
+</body>
+</html>

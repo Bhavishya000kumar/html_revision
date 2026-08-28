@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 03 - Example 04: Special Protocol & Download Links</title>
+</head>
+<body>
+
+    <h1>Special Protocol &amp; File Download Links</h1>
+    <p>This example demonstrates email composers, phone dialers, SMS triggers, and forced file download attributes.</p>
+
+    <hr>
+
+    <h2>1. Email Links (mailto:)</h2>
+    <p>
+        <!-- Opens default email client (Gmail/Outlook) -->
+        Basic Email:
+        <a href="mailto:support@bhavishya.com" title="Open email client">Send Email to Support</a>
+    </p>
+
+    <p>
+        <!-- Email with pre-filled subject and body parameters -->
+        Email with Pre-filled Subject &amp; Body:
+        <br>
+        <a href="mailto:support@bhavishya.com?subject=HTML%20Course%20Inquiry&body=Hello%20Team,%0A%0AI%20have%20a%20question%20regarding%20Unit%2003." title="Send pre-filled inquiry email">
+            Send Inquiry Email (Pre-filled Subject &amp; Body)
+        </a>
+    </p>
+
+    <h2>2. Telephone &amp; SMS Links (tel: &amp; sms:)</h2>
+    <p>
+        <!-- Opens Phone Dialer on mobile devices -->
+        Phone Call:
+        <a href="tel:+919876543210" title="Trigger phone dialer">+91 98765 43210</a>
+    </p>
+
+    <p>
+        <!-- Opens Messaging App on mobile devices -->
+        SMS Message:
+        <a href="sms:+919876543210" title="Trigger SMS messaging app">Send SMS to Support</a>
+    </p>
+
+    <h2>3. Forced File Download Attribute (download)</h2>
+    <p>
+        <!-- The download attribute forces browser to save file instead of navigating -->
+        Download Syllabus PDF:
+        <a href="example_01_basic_links.html" download="HTML5_Unit03_Guide.html" title="Download HTML File">
+            Download Unit 03 Guide (File Download Action)
+        </a>
+    </p>
+
+</body>
+</html>

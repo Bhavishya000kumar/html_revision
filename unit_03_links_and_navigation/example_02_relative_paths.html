@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 03 - Example 02: Relative File Paths</title>
+</head>
+<body>
+
+    <h1>Relative File Path Navigation</h1>
+    <p>This example demonstrates how to navigate between internal website pages using relative directory paths.</p>
+
+    <hr>
+
+    <!-- Navigation Menu Bar -->
+    <nav>
+        <p><strong>Website Navigation Bar:</strong></p>
+        
+        <!-- 1. Link to file in SAME directory -->
+        <a href="example_01_basic_links.html" title="Go to Example 01 in same directory">Home (Example 01)</a> | 
+
+        <!-- 2. Link using explicit current directory dot notation (./) -->
+        <a href="./example_03_page_anchors.html" title="Go to Page Anchors example">Page Anchors (Example 03)</a> | 
+
+        <!-- 3. Link to file in SAME directory -->
+        <a href="example_04_special_links.html" title="Go to Special Links example">Special Links (Example 04)</a>
+    </nav>
+
+    <hr>
+
+    <h2>Relative Path Resolution Guide</h2>
+    
+    <p><strong>1. Same Directory:</strong> <code>href="notes.md"</code> or <code>href="./notes.md"</code></p>
+    <p>Look for <code>notes.md</code> inside the current folder location.</p>
+
+    <p><strong>2. Child Subfolder:</strong> <code>href="pages/contact.html"</code></p>
+    <p>Enter the <code>pages</code> subfolder and look for <code>contact.html</code>.</p>
+
+    <p><strong>3. Parent Folder (One Level UP):</strong> <code>href="../README.md"</code></p>
+    <p>Step out of <code>unit_03_links_and_navigation</code> into the root <code>html</code> folder and open <code>README.md</code>.</p>
+    <p>
+        <a href="../README.md" title="Go to Master Course Syllabus in parent directory">
+            &larr; Return to Master Course README (Parent Folder)
+        </a>
+    </p>
+
+</body>
+</html>
