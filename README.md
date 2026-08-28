@@ -85,6 +85,7 @@ HTML Capstone Projects
 | **`unit_14_html_to_css_js_connection`** | HTML → CSS, JS DOM & React Connection | Linking CSS & JS (`defer`/`async`), DOM selection (`querySelector`), form event submission, translating HTML markup to React JSX components. |
 | **`unit_15_html_interview_concepts`** | HTML Placement Interview Prep | Top placement interview Q&A, browser DOM parsing & construction pipeline, standards mode vs quirks mode, HTML performance. |
 | **`unit_16_html_projects`** | Real-World HTML Capstone Projects | 8 complete, runnable HTML projects combining all concepts step-by-step. |
+| **`html_revision`** | ⚡ Final Placement Revision Suite | [Master Revision Hub](html_revision/README.md) with short notes, comparison matrices, and 100 Mass-Hiring Placement MCQs. |
 
 ---
 
@@ -128,36 +129,23 @@ Each topic unit follows a clean, standardized file arrangement:
 html/
 ├── README.md                              # Master Course Syllabus & Navigation (You are here)
 │
-├── unit_01_html_basics/
-│   ├── README.md                          # Topic Overview & Quick Reference
-│   ├── notes.md                           # Detailed Hinglish Master Explanation
-│   ├── example_01_skeleton.html           # Executable HTML Example
-│   ├── example_02_head_meta.html           # Executable HTML Example
-│   └── practice.md                        # Level 1 to Level 4 Practice Tasks
+├── unit_01_html_basics/                   # (Theory, Examples, Practice)
+├── unit_02_text_and_headings/             # (Theory, Examples, Practice, Solutions, MCQs)
+├── unit_03_links_and_navigation/          # (Theory, Examples, Practice, Solutions, MCQs)
+├── unit_04_images/                        # (Theory, Examples, Practice, Solutions, MCQs)
+├── unit_05_lists/                         # (Notes, 20 MCQs)
+├── unit_06_tables/                        # (Notes, 20 MCQs)
+├── unit_07_forms/                         # (Notes, 20 MCQs)
 │
-├── unit_02_text_and_headings/
-│   ├── README.md
-│   ├── notes.md
-│   ├── example_01_headings_paragraphs.html
-│   ├── example_02_formatting.html
-│   └── practice.md
-│
-├── ... (unit_03 to unit_15)
-│
-└── unit_16_html_projects/
-    ├── README.md
-    ├── project_01_profile.html
-    ├── project_02_resume.html
-    ├── project_03_college_info.html
-    ├── project_04_registration_form.html
-    ├── project_05_product_page.html
-    ├── project_06_restaurant_menu.html
-    ├── project_07_portfolio.html
-    └── project_08_multipage_site/
-        ├── index.html
-        ├── about.html
-        ├── courses.html
-        └── contact.html
+├── unit_08_forms_advanced/                # (Notes, 20 MCQs)
+├── unit_09_semantic_html/                 # (Notes, 20 MCQs)
+├── unit_10_div_span_and_layout/           # (Notes, 20 MCQs)
+├── unit_11_html_attributes/               # (Notes, 20 MCQs)
+├── unit_12_multimedia/                    # (Notes, 20 MCQs)
+├── unit_13_accessibility_and_seo/         # (Notes, 20 MCQs)
+├── unit_14_html_to_css_js_connection/     # (Notes, 20 MCQs)
+├── unit_15_html_interview_concepts/      # (Notes, 20 MCQs)
+└── unit_16_html_projects/                 # (Capstones Architecture Notes, 20 MCQs)
 ```
 
 ---
