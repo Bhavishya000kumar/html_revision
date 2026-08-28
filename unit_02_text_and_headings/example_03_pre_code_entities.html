@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 02 - Example 03: Pre, Code &amp; HTML Entities</title>
+</head>
+<body>
+
+    <h1>Preformatted Text, Code Blocks &amp; HTML Entities</h1>
+    <p>This example demonstrates how to display source code, preserved whitespace, and reserved characters safely.</p>
+
+    <hr>
+
+    <h2>1. Inline Code Snippets</h2>
+    <p>To print output in JavaScript, use the <code>console.log()</code> function.</p>
+    <p>In HTML, paragraphs are created using the <code>&lt;p&gt;</code> tag.</p>
+
+    <h2>2. Multi-Line Code Block (&lt;pre&gt; + &lt;code&gt;)</h2>
+    <p>Below is a preformatted JavaScript code block preserving tabs, line breaks, and indentation:</p>
+
+<pre><code>// JavaScript Function Example
+function calculateTotal(price, tax) {
+    const total = price + (price * tax);
+    return total;
+}
+
+console.log("Total Price:", calculateTotal(100, 0.18));</code></pre>
+
+    <h2>3. ASCII Art / Preserved Formatting (&lt;pre&gt;)</h2>
+<pre>
+   /\_/\
+  ( o.o )   <-- Preserved ASCII Art using &lt;pre&gt; tag
+   > ^ <
+</pre>
+
+    <hr>
+
+    <h2>4. Common HTML Entities Demonstration</h2>
+    <p>1. Less than (&lt;): <code>&amp;lt;</code> &rarr; 5 &lt; 10</p>
+    <p>2. Greater than (&gt;): <code>&amp;gt;</code> &rarr; 10 &gt; 5</p>
+    <p>3. Ampersand (&amp;): <code>&amp;amp;</code> &rarr; Rock &amp; Roll</p>
+    <p>4. Double Quotation (&quot;): <code>&amp;quot;</code> &rarr; &quot;Hello World&quot;</p>
+    <p>5. Non-breaking space (&amp;nbsp;): Word1&nbsp;&nbsp;&nbsp;&nbsp;Word2 (4 non-breaking spaces inserted)</p>
+    <p>6. Copyright Symbol (&amp;copy;): &copy; 2026 Full Stack Course</p>
+    <p>7. Registered Trademark (&amp;reg;): Product&reg;</p>
+    <p>8. Indian Rupee Symbol (&amp;#8377;): Course Fee = &#8377; 0 (Free Open Source)</p>
+
+</body>
+</html>
