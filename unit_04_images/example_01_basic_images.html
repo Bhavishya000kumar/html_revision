@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 04 - Example 01: Basic Images & Attributes</title>
+</head>
+<body>
+
+    <h1>Basic HTML Images &amp; Core Attributes</h1>
+    <p>This example demonstrates basic image embedding, CLS dimension attributes, broken image fallbacks, and clickable image links.</p>
+
+    <hr>
+
+    <h2>1. Standard Image with Dimensions &amp; Alt Text</h2>
+    <p>Using explicit width and height attributes reserves layout space and prevents Cumulative Layout Shift (CLS):</p>
+    
+    <!-- Standard Image embedding using placehold.co SVG generator for guaranteed rendering -->
+    <img src="https://placehold.co/600x300/003366/ffffff?text=HTML5+Image+Demo" 
+         alt="Sample web development banner image with navy blue background" 
+         width="600" 
+         height="300">
+
+    <h2>2. Broken Image Path Fallback Demonstration</h2>
+    <p>When an image file fails to load (404 error or broken path), the browser renders a broken image icon alongside the descriptive <code>alt</code> text:</p>
+    
+    <!-- Intentional broken path to demonstrate alt fallback text in browser -->
+    <img src="non_existent_image_file.jpg" 
+         alt="Fallback Text: Full Stack Developer Portfolio Badge (Image Failed to Load)" 
+         width="300" 
+         height="150">
+
+    <h2>3. Clickable Image Link (Banner / Logo)</h2>
+    <p>Wrapping an <code>&lt;img&gt;</code> element inside an <code>&lt;a&gt;</code> tag creates a clickable graphic link:</p>
+    
+    <!-- Clickable image link -->
+    <a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer" title="Click to visit MDN Web Docs">
+        <img src="https://placehold.co/300x100/0275d8/ffffff?text=Visit+MDN+Docs" 
+             alt="MDN Web Docs Banner - Click to open documentation in new tab" 
+             width="300" 
+             height="100">
+    </a>
+
+</body>
+</html>

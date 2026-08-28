@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 04 - Example 02: Semantic Figure & Captions</title>
+</head>
+<body>
+
+    <h1>Semantic Image Containers (&lt;figure&gt; &amp; &lt;figcaption&gt;)</h1>
+    <p>This example demonstrates how HTML5 uses the <code>&lt;figure&gt;</code> element to wrap self-contained media and captions.</p>
+
+    <hr>
+
+    <h2>1. Single Image with Caption</h2>
+    
+    <!-- Semantic Figure 1 -->
+    <figure>
+        <img src="https://placehold.co/500x250/28a745/ffffff?text=Architecture+Diagram" 
+             alt="System architecture diagram illustrating Client to Server HTTP request and DOM tree rendering" 
+             width="500" 
+             height="250">
+        <figcaption>Figure 1.1: Web Request Lifecycle and Browser DOM Tree Parsing Pipeline.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>2. Photo Gallery Figure Group</h2>
+    <p>Figure containers can encapsulate multiple related items under a single combined caption:</p>
+
+    <!-- Semantic Figure 2: Group of Photos -->
+    <figure>
+        <img src="https://placehold.co/240x150/17a2b8/ffffff?text=HTML5" 
+             alt="HTML5 Logo Icon" 
+             width="240" 
+             height="150">
+        
+        <img src="https://placehold.co/240x150/ffc107/333333?text=JavaScript" 
+             alt="JavaScript Logo Icon" 
+             width="240" 
+             height="150">
+
+        <figcaption>Figure 1.2: Core Client-Side Technologies for Modern Web Applications.</figcaption>
+    </figure>
+
+    <hr>
+
+    <h2>3. Code Block inside Figure</h2>
+    <p>The <code>&lt;figure&gt;</code> container is not limited to images! It can also encapsulate code listings:</p>
+
+    <!-- Semantic Figure 3: Code Listing -->
+    <figure>
+<pre><code>// JavaScript DOM Image Selection Example
+const profileImg = document.querySelector('img');
+console.log(profileImg.alt);</code></pre>
+        <figcaption>Listing 1.3: Selecting an HTML Image DOM Node via JavaScript querySelector.</figcaption>
+    </figure>
+
+</body>
+</html>

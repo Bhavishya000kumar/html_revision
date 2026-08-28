@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 04 - Example 03: Image Formats & Performance</title>
+</head>
+<body>
+
+    <h1>Image Formats &amp; Native Lazy Loading Performance</h1>
+    <p>This example demonstrates modern image formats (WebP, SVG) and native performance optimization using <code>loading="lazy"</code>.</p>
+
+    <hr>
+
+    <h2>1. Inline Scalable Vector Graphics (SVG)</h2>
+    <p>SVGs are XML-based vector graphics that scale infinitely without pixelation or loss of quality:</p>
+
+    <!-- Inline SVG Element -->
+    <svg width="120" height="120" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45" fill="#007bff" />
+        <text x="50" y="55" font-size="20" fill="white" text-anchor="middle" font-family="sans-serif">SVG</text>
+    </svg>
+
+    <hr>
+
+    <h2>2. Above-the-Fold vs Below-the-Fold Performance (loading attribute)</h2>
+
+    <h3>Above-the-Fold Image (loading="eager")</h3>
+    <p>Images visible immediately when page loads should load eagerly:</p>
+
+    <!-- Above-the-fold image loads immediately -->
+    <img src="https://placehold.co/600x200/6f42c1/ffffff?text=Eager+Hero+Banner" 
+         alt="Hero banner graphic loaded eagerly for fast first contentful paint" 
+         width="600" 
+         height="200" 
+         loading="eager">
+
+    <hr>
+
+    <h3>Below-the-Fold Image (loading="lazy")</h3>
+    <p>Images further down the page should use <code>loading="lazy"</code> to save initial load bandwidth:</p>
+
+    <p style="margin-bottom: 400px;">(Scroll down to trigger lazy loading...)</p>
+
+    <!-- Native Lazy Loading: Browser defers request until user scrolls near this element -->
+    <figure>
+        <img src="https://placehold.co/600x250/fd7e14/ffffff?text=Lazy+Loaded+Footer+Graphic" 
+             alt="Footer illustration loaded lazily upon scroll" 
+             width="600" 
+             height="250" 
+             loading="lazy">
+        <figcaption>This image uses loading="lazy" to defer network fetching until scrolled into view.</figcaption>
+    </figure>
+
+</body>
+</html>
